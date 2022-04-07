@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        tools:context=".FullscreenActivity">
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exoplayer_fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/tv_fullscreen"
+            app:controller_layout_id="@layout/exoplayer_custom_controls"
+            app:resize_mode="fill"
+            tools:ignore="NotSibling">
+
+        <TextView
+                android:id="@+id/tv_fullscreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#CC000000"
+                android:padding="5dp"
+                android:text="name"
+                android:textSize="15sp" />
+
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/exoplayer_fullscreen"
+            android:layout_margin="5dp"
+            android:layout_above="@+id/commentRelative"
+            >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+            android:id="@+id/commentRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:padding="4dp"
+            >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_comment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_marginStart="4dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <EditText
+                android:id="@+id/add_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_image_comment"
+                android:layout_toLeftOf="@+id/post_comment"
+                android:hint="write your comment..."
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                >
+        </EditText>
+
+
+        <TextView
+                android:id="@+id/post_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="Publish"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_marginEnd="6dp"
+                >
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Postra</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+    -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-8481609816216389/5223325415</string>
+    <string name="interstitial_ad_unit_id_2">ca-app-pub-8481609816216389/2549878859</string>
+
+</resources>

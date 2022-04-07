@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "757013468735",
+    "firebase_url": "https://postra-95769.firebaseio.com",
+    "project_id": "postra-95769",
+    "storage_bucket": "postra-95769.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757013468735:android:309342f0ad9039898d0a8a",
+        "android_client_info": {
+          "package_name": "com.xcodelabs.postra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757013468735-41lpej1fsvgcsvkh4us4bjgv7u43u0q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxA-CJkQBY1u_BOmI1ye4HBKVkihpgnkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757013468735-41lpej1fsvgcsvkh4us4bjgv7u43u0q8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

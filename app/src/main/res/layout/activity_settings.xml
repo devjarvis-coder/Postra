@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDark"
+        tools:context=".SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_bar_layout_settings"
+            android:background="@color/colorAccent"
+            >
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/settings_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@color/colorAccent"
+                app:titleTextColor="@color/colorPrimary"
+                app:theme="@style/ToolbarColoredBackArrow"
+                app:popupTheme="@style/AppTheme"
+                >
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerVertical="true"
+                        />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/privacy"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/app_bar_layout_settings">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="privacy policy"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <TextView
+                    android:text="see the app privacy policy"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/contact"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/privacy">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="contact us"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <TextView
+                    android:text="contact with Instabook "
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/about"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/contact">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="about"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <TextView
+                    android:text="learn about app"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
